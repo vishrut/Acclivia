@@ -1,0 +1,12 @@
+
+
+input.invalid {
+	background-color: #FF9;
+	border: 1px red inset;
+}
+
+tr.invalid {
+	color: #F00;
+	font-weight: bold;
+}
+

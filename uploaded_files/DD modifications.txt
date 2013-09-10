@@ -1,0 +1,34 @@
+﻿Some suggestions, many more to come :P
+
+Comment 
+- Comments are made by a user for a specific item. Modify the RS to include the concerned item.
+
+Inventory 
+- Owner is missing. 
+- Change Item Tag to Item ID for clarity.
+- Expand 'Details' (We'll have to discuss what to include in details).
+- Field for image.
+
+Current Transaction
+- What does PK1 signify?
+- I think we should add a field to describe which Offer is under transaction
+
+Service
+- Change Service Tag to Service ID for clarity
+- Apart from Service Name, some other details might also be required
+- What if we include Services int the inventory? So, the structure would be one table for items, one table for services and an inventory table to associate items/services to a user. Then we only need one Inventory ID to identify a service or item uniquely. This looks a bit cleaner to me. 
+
+Put up for
+- Why is there an Item Tag as well as Service Tag?
+- What is PK1?
+- Assuming that PK1 describes whether item is up for sale/rent/swap, the we can use just Inventory ID + PK1 as the fields (see the last point in Services).
+
+Collection
+- What is a collection?
+
+Transaction Offer
+- Where are the offer details? How can I determine what has been offered?
+- Where is the item against which an offer has been made?
+- This table should look something like (Target item ID, Offered item ID #1, #2, #3, #4, Cash). Buyer/seller can be determined from the item IDs. 
+
+Notifications?

@@ -1,0 +1,6 @@
+.validationError {
+            border: solid 2px red;
+}
+.validationValid {
+            border:  solid 2px green;
+}
